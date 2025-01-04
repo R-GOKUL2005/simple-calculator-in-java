@@ -1,39 +1,35 @@
-# simple-calculator-in-java
-// Source code is decompiled from a .class file using FernFlower decompiler.
 import java.util.Scanner;
+public class main{
+    public static void main(String[]args){
+        System.out.println("   SIMPLE CALCULCTOR   ");
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("number1");
+        int num1=scanner.nextInt();
+        System.out.println("number2"); 
+        int num2=scanner.nextInt();
+        System.out.println("CHOOSE YOUR OPERATOR(1-4)");
+        String operator="";
+        int oper = scanner.nextInt(); 
+        switch(oper){
+            case 1:
+                operator="Addition";
+                System.out.println(num1+num2);
+                break;
+            case 2:
+                operator="Subtraction";
+                System.out.println(num1-num2);
+                break;
+            case 3:
+                operator="Multiplication";
+                System.out.println(num1*num2);
+                break;
+            case 4:
+                operator="Divition";
+                System.out.println(num1/num2);
+                break;
 
-public class main {
-   public main() {
-   }
+        }
+        scanner.close();
 
-   public static void main(String[] var0) {
-      System.out.println("   SIMPLE CALCULCTOR   ");
-      Scanner var1 = new Scanner(System.in);
-      System.out.println("number1");
-      int var2 = var1.nextInt();
-      System.out.println("number2");
-      int var3 = var1.nextInt();
-      System.out.println("CHOOSE YOUR OPERATOR(1-4)");
-      String var4 = "";
-      int var5 = var1.nextInt();
-      switch (var5) {
-         case 1:
-            var4 = "Addition";
-            System.out.println(var2 + var3);
-            break;
-         case 2:
-            var4 = "Subtraction";
-            System.out.println(var2 - var3);
-            break;
-         case 3:
-            var4 = "Multiplication";
-            System.out.println(var2 * var3);
-            break;
-         case 4:
-            var4 = "Divition";
-            System.out.println(var2 / var3);
-      }
-
-      var1.close();
-   }
+    }
 }
